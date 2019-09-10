@@ -1,0 +1,10 @@
+<div class="container">
+	<div class="panel panel-primary">
+		<div class="panel panel-heading">List of files</div>
+		<div *ngFor="let file of fileUploads">
+			<div class="panel panel-body">
+				<app-details-upload [fileUpload]="file"></app-details-upload>
+			</div>
+		</div>
+	</div>
+</div>
